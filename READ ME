@@ -1,0 +1,24 @@
+READ ME
+Author: Aaron Havens
+Title: KPCB FellowShip Project
+
+To run this jar file: 
+1. Open up your command line
+2. Navigate to the directory of hashHavens.jar
+3. Follow the instructions by keyboard input to use hashmap
+
+-Select Data Type
+-Select Operation
+-Repeat
+-Enter 5 to quit
+
+Of course this HashMap can use more than just Integers, Doubles and Strings. See the source code for the full implementation of the data structure. The map operates by instantiating a generic class type for the value and uses a String key. The HashMap Class contains an inner class to represent data for each Entry. To instantiate a HashMap object use the following syntax once the package is imported.
+HashMap<TypeHere> var = new HashMap<TypeHere>(size);
+
+Collisions are handled using linked lists and attempting to set(key) of a key already existing in the HashMap will overwrite the key. The only way a set will fail is attempting to set a null value. Setting returns true or false.
+
+Delete and get methods return the cooresponding value for the given key and null if not found.
+
+Load is a metric that measures the number of HashMap indices occupied compared to the total capacity. This is a double type.
+
+Note: The user is responsible for determining the HashMap size to meet their data needs. The run-time and memory effeciency of this data structure greatly depends on a tradeoff between memory space and collisions. A larger HashMap will reduce the total number of collisions and perfom access and setting in constant time but requires greater memory. A smaller HashMap may have a greater number of collisions which will result in O(N) time access and setting.
